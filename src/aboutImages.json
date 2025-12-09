@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Traditional Taste",
+    "description": "Our recipes come straight from generations of sweet makers.",
+    "image": "/images/about1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Pure Ingredients",
+    "description": "We use only pure jaggery, ghee, and handpicked dry fruits.",
+    "image": "/images/about2.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Made with Love",
+    "description": "Each sweet is handcrafted to ensure taste and freshness.",
+    "image": "/images/about3.jpg"
+  }
+]
