@@ -31,7 +31,6 @@ export default function App() {
       {page === "sweets" && <Sweets setPage={setPage} />} */}
       
       
-      
         
       <Routes>
         <Route path="/" element={<Home />} />

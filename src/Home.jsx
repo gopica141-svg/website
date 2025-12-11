@@ -1,23 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import data from './data.json';
 import Header from './Header';
 import Footer from './footer';
+import About from './About';
+import Sweets from './sweets';
 
 export default function Home() {
   const navigate = useNavigate();
 
+  
+  const [currentPage, setCurrentPage] = useState('home'); 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);   
+
   const handleNavigate = (id) => {
     navigate(`details/${id}`);
   };
-  const handleNavigateAbout = ()=>{
+
+  const handleNavigateAbout = () => {
     navigate('/about');
   };
 
   return (
     <>
-     <Header/>
+      
+      <Header 
+        setPage={setCurrentPage} 
+        isLoggedIn={isLoggedIn} 
+        setIsLoggedIn={setIsLoggedIn} 
+      />
+
+      
       <div
         style={{
           background: '#e9f2f9',
@@ -40,38 +54,23 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="primary"
-                style={{
-                  borderRadius: '30px',
-                  background: '#225788',
-                  border: 'none',
-                }}
+                style={{ borderRadius: '30px', background: '#225788', border: 'none' }}
+                onClick={handleNavigateAbout} 
               >
-                Shop Now
+                Learn More
               </Button>
-
-           
             </Col>
 
             <Col md={6} className="text-center">
               <img
                 src="/images/sweets2.jpeg"
                 alt="sweets"
-                style={{
-                  width: '170px',
-                  height:'170px',
-                  margin: '16px',
-                  borderRadius: '18px',
-                  boxShadow: '0 8px 36px #f3f1ecff',
-                }}
+                style={{ width: '170px', height:'170px', margin: '16px', borderRadius: '18px', boxShadow: '0 8px 36px #f3f1ecff' }}
               />
               <img
                 src="/images/sweets1.jpeg"
                 alt="sweets"
-                style={{
-                  width: '170px',
-                  borderRadius: '18px',
-                  boxShadow: '0 8px 36px #f8f8f6ff',
-                }}
+                style={{ width: '170px', borderRadius: '18px', boxShadow: '0 8px 36px #f8f8f6ff' }}
               />
             </Col>
           </Row>
@@ -97,12 +96,7 @@ export default function Home() {
                     variant="top"
                     src={prod.image}
                     alt={prod.name}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      objectPosition: 'center',
-                    }}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                   />
                 </div>
 
@@ -120,7 +114,12 @@ export default function Home() {
           ))}
         </Row>
       </Container>
-      <Footer/>
+
+      
+      <Sweets />
+      <About />
+
+      <Footer />
     </>
   );
 }
