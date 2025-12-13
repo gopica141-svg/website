@@ -11,7 +11,10 @@ import Login from "./Login";
 import Register from "./Register";
 import About from "./About";
 import SweetDetails from "./SweetDetails";
-import Footer from "./Footer";
+import Footer from "./Footer.jsx";
+
+
+
 
  
 export default function App() {
@@ -44,7 +47,9 @@ export default function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/sweets/:id" element={<SweetDetails/>} />
             <Route path="/header" element={<Header/>} />
-              <Route path="/footer" element={<Footer/>} />
+             <Route path="/footer" element={<Footer/>} />
+           
+             
           
       </Routes>
       
