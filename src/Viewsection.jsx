@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const ViewSection = ({ data }) => {
+function ViewSection({ data }) {
   const navigate = useNavigate();
 
   return (

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Nav, NavDropdown, Container, Badge, Button } from "react-bootstrap";
 import { FaShoppingCart } from "react-icons/fa";
 
-export default function Header({ 
+function Header({ 
   isLoggedIn, 
   setIsLoggedIn, 
   onLoginClick, 
@@ -90,3 +90,4 @@ export default function Header({
 }
 
 
+export default Header

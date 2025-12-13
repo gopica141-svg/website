@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import aboutImages from "./aboutImages.json";
 
-export default function About() {
+function About() {
   return (
     <Container className="my-5">
       <h2 className="text-center fw-bold mb-4" style={{ color: "#225788" }}>
@@ -44,3 +44,4 @@ export default function About() {
     </Container>
   );
 }
+export default About;

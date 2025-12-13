@@ -3,7 +3,7 @@ import { Container, Table, Button, Form, Image } from "react-bootstrap";
 import Header from "./Header";
 
 
-export default function Cart() {
+function Cart() {
   const [cartItems, setCartItems] = useState([]);
   console.log(cartItems);
   
@@ -121,3 +121,4 @@ export default function Cart() {
   );
 }
 
+export default Cart

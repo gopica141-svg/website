@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container, Row, Form, Col, Button, Card } from 'react-bootstrap';
 
-export default function Footer() {
+function Footer() {
   return (
     <>
       <footer style={{ backgroundColor: '#F8F8F8', padding: '40px 0', color: '#333' }}>
@@ -130,3 +130,4 @@ export default function Footer() {
     </>
   )
 }
+export default Footer

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
-export default function Register({ onClose }) {
+function Register({ onClose }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -75,3 +75,4 @@ export default function Register({ onClose }) {
     </Form>
   );
 }
+export default Register

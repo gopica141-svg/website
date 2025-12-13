@@ -17,7 +17,7 @@ import Footer from "./Footer.jsx";
 
 
  
-export default function App() {
+ function App() {
   //const [page, setPage] = useState("home");
   const [currentPage, setCurrentPage] = useState('home');
   const [isLoggedIn, setIsLoggedIn] = useState(
@@ -61,3 +61,4 @@ export default function App() {
 
   );
 }
+export default App

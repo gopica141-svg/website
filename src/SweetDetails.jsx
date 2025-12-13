@@ -5,7 +5,7 @@ import data from "./sweet.json";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const SweetDetails = () => {
+function SweetDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
 

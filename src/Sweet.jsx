@@ -4,7 +4,7 @@ import {Container,Row, Col, Card,Button,InputGroup,FormControl,Alert,
 import data from "./sweet.json";
 import { useNavigate } from "react-router-dom";
 
-const Sweet = () => {
+function Sweet() {
   const navigate = useNavigate();
 
   const [quantities, setQuantities] = useState(

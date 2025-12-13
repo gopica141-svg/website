@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
-export default function Login({ setIsLoggedIn, onClose }) {
+function Login({ setIsLoggedIn, onClose }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -56,3 +56,4 @@ export default function Login({ setIsLoggedIn, onClose }) {
     </Form>
   );
 }
+export default Login

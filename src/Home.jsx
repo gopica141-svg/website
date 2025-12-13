@@ -8,7 +8,7 @@ import Sweet from './Sweet';
 import Login from './Login';
 import Register from './Register';
 
-export default function Home() {
+function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
@@ -117,3 +117,4 @@ export default function Home() {
 }
 
 
+export default Home

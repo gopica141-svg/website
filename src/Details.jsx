@@ -5,7 +5,7 @@ import data from "./sweet.json";
 import Header from "./Header";
 import Footer from "./Footer";
 
-export default function Details() {
+function Details() {
   const { id } = useParams();
 
   const [productQuantity, setProductQuantity] = useState(1);
@@ -105,3 +105,4 @@ export default function Details() {
     </>
   );
 }
+export default Details
