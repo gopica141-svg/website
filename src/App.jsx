@@ -7,7 +7,7 @@ import Cart from "./Cart";
 import Details from "./Details";
 import Header from "./Header";
 
-import Login from "./Login";
+import Login from "./Login.jsx";
 import Register from "./Register";
 import About from "./About";
 import SweetDetails from "./SweetDetails";
@@ -40,7 +40,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="details/:id" element={<Details />} />
-        <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+        <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register />} />
           <Route path="/sweets" element={<Sweets />} />
           <Route path="/Cart" element={<Cart/>} />
