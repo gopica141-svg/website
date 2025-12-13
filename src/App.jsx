@@ -1,18 +1,19 @@
 import React, { useState,useEffect } from "react";
 import Home from "./Home";
-import Sweets from "./Sweet.jsx";
+import Sweets from "./Sweet";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./Cart";
 import Details from "./Details";
 import Header from "./Header";
-import Footer from "./Footer.jsx";
+
 import Login from "./Login";
 import Register from "./Register";
 import About from "./About";
-import SweetDetails from "./SweetDetails.jsx";
+import SweetDetails from "./SweetDetails";
+import Footer from "./Footer";
 
-
+ 
 export default function App() {
   //const [page, setPage] = useState("home");
   const [currentPage, setCurrentPage] = useState('home');
