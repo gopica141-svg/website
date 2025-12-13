@@ -7,10 +7,11 @@ import Cart from "./Cart";
 import Details from "./Details";
 import Header from "./Header";
 import Footer from "./footer";
-import Login from "./login";
-import Register from "./register";
+import Login from "./Login";
+import Register from "./Register";
 import About from "./About";
 import SweetDetails from "./SweetDetails.jsx";
+
 
 export default function App() {
   //const [page, setPage] = useState("home");
@@ -41,6 +42,7 @@ export default function App() {
           <Route path="/Cart" element={<Cart/>} />
           <Route path="/about" element={<About/>}/>
           <Route path="/sweets/:id" element={<SweetDetails/>} />
+          
       </Routes>
       
 

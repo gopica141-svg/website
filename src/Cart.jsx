@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Table, Button, Form, Image } from "react-bootstrap";
+import Header from "./Header";
+
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -31,13 +33,17 @@ export default function Cart() {
 
   if (cartItems.length === 0) {
     return (
+      
       <Container className="mt-5 text-center">
+         
         <h2>Your cart is empty 🛒</h2>
       </Container>
     );
   }
 
   return (
+    <>
+    <Header/>
     <Container className="mt-5">
       <h2 className="mb-4">🛍️ Shopping Cart</h2>
 
@@ -111,6 +117,7 @@ export default function Cart() {
         Total: <span className="text-success fw-bold">₹{getTotal()}</span>
       </h4>
     </Container>
+    </>
   );
 }
 

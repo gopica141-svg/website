@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
-import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Form, Button, Alert } from 'react-bootstrap';
 
-export default function Register() {
+export default function Register({ onClose }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [message, setMessage] = useState('');
-  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
+    setMessage('');
 
     if (!email || !password || !confirmPassword) {
       setMessage(<Alert variant="danger">All fields are required!</Alert>);
@@ -27,59 +26,52 @@ export default function Register() {
       return;
     }
 
-    
     localStorage.setItem(email, JSON.stringify({ email, password }));
+    setMessage(<Alert variant="success">Registration Successful!</Alert>);
 
-    setMessage(<Alert variant="success">Registration Successful! Redirecting to Login...</Alert>);
-    setTimeout(() => navigate('/login'), 1500);
+    setTimeout(() => {
+      if (onClose) onClose(); // close modal after registration
+    }, 1000);
   };
 
   return (
-    <Container className="my-5">
-      <Row className="justify-content-md-center">
-        <Col md={6}>
-          <h2 className="text-center mb-4">Register</h2>
-          {message}
+    <Form onSubmit={handleRegister}>
+      {message}
 
-          <Form onSubmit={handleRegister}>
-            <Form.Group className="mb-3">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Label>Email</Form.Label>
+        <Form.Control
+          type="email"
+          placeholder="Enter email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+      </Form.Group>
 
-            <Form.Group className="mb-3">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Enter password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Label>Password</Form.Label>
+        <Form.Control
+          type="password"
+          placeholder="Enter password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+      </Form.Group>
 
-            <Form.Group className="mb-3">
-              <Form.Label>Confirm Password</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Confirm password"
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                required
-              />
-            </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Label>Confirm Password</Form.Label>
+        <Form.Control
+          type="password"
+          placeholder="Confirm password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+          required
+        />
+      </Form.Group>
 
-            <Button type="submit" className="w-100">Register</Button>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+      <Button type="submit" className="w-100">Register</Button>
+    </Form>
   );
 }
-
