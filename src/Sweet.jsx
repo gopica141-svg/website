@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import {Container,Row, Col, Card,Button,InputGroup,FormControl,Alert,
 } from "react-bootstrap";
-import data from "./sweets.json";
+import data from "./sweet.json";
 import { useNavigate } from "react-router-dom";
 
-const Sweets = () => {
+const Sweet = () => {
   const navigate = useNavigate();
 
   const [quantities, setQuantities] = useState(
@@ -108,6 +108,6 @@ const Sweets = () => {
   );
 };
 
-export default Sweets;
+export default Sweet;
 
 

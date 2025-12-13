@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Container, Button, Alert } from "react-bootstrap";
 import { useParams, useNavigate } from "react-router-dom";
-import data from "./sweets.json";
+import data from "./sweet.json";
 import Header from "./Header";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 const SweetDetails = () => {
   const { id } = useParams();

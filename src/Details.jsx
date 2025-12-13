@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col, Button, Image, Form } from "react-bootstrap";
-import data from "./sweets.json";
+import data from "./sweet.json";
 import Header from "./Header";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 export default function Details() {
   const { id } = useParams();

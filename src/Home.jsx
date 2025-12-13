@@ -2,9 +2,9 @@ import React, { useState, useRef } from 'react';
 import { Container, Row, Col, Button, Card, Modal } from 'react-bootstrap';
 
 import Header from './Header';
-import Footer from './footer';
+import Footer from './Footer';
 import About from './About';
-import Sweets from './sweets';
+import Sweet from './Sweet';
 import Login from './Login';
 import Register from './Register';
 
@@ -84,7 +84,7 @@ export default function Home() {
 
 
         <div ref={sweetsRef}>
-          <Sweets />
+          <Sweet />
         </div>
         <div ref={aboutRef}>
 
