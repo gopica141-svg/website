@@ -40,7 +40,7 @@ function ItemDetails() {
   const addToCart = () => {
     if (!product) return;
     console.log("Attempting to add to cart:", product.name, quantity);
-    axios.post(`http://localhost:5001/api/cart/${userId}`, {
+    axios.post(`https://website-1-qyg8.onrender.com/api/cart/${userId}`, {
       productId: product.id.toString(),
       name: product.name,
       price: product.price,

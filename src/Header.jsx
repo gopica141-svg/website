@@ -17,7 +17,7 @@ function Header({
   const userId = "6949269c5f3f77a44004b77f"; 
 
   useEffect(() => {
-    axios.get(`http://localhost:5001/api/cart/${userId}`)
+    axios.get(`https://website-1-qyg8.onrender.com/api/cart/${userId}`)
       .then((res) => {
         const total = res.data.reduce((sum, item) => sum + item.quantity, 0);
         setCartQuantity(total);

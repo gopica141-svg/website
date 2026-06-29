@@ -20,7 +20,7 @@
 
 //   const addToCart = () => {
 //     if (!product) return;
-//     axios.post(`http://localhost:5001/api/cart/${userId}`, {
+//     axios.post(`https://website-1-qyg8.onrender.com/api/cart/${userId}`, {
 //       productId: product.id.toString(),
 //       name: product.name,
 //       price: product.price,
@@ -107,7 +107,7 @@ function SweetDetails() {
 
   useEffect(() => {
     const category = slug || "sweets"; 
-    axios.get(`http://localhost:5001/api/products/${category}/${id}`)
+    axios.get(`https://website-1-qyg8.onrender.com/api/products/${category}/${id}`)
       .then((res) => {
         setProduct(res.data);
         setLoading(false);
@@ -125,7 +125,7 @@ function SweetDetails() {
 
   const addToCart = () => {
     if (!product) return;
-    axios.post(`http://localhost:5001/api/cart/${userId}`, {
+    axios.post(`https://website-1-qyg8.onrender.com/api/cart/${userId}`, {
       productId: product.productId,
       name: product.name,
       price: product.price,

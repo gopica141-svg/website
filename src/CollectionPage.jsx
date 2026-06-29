@@ -80,7 +80,7 @@ function CollectionPage() {
     setLoading(true);
     // Backend API-kku request anuppum
     const encodedCategory = encodeURIComponent(slug.trim());
-    axios.get(`http://localhost:5001/api/products/${encodedCategory}`)
+    axios.get(`https://website-1-qyg8.onrender.com/api/products/${encodedCategory}`)
       .then((res) => {
         setProducts(res.data);
         setLoading(false);

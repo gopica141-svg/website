@@ -12,7 +12,7 @@ function ViewAll() {
   const userId = "6949269c5f3f77a44004b77f";
 
   useEffect(() => {
-    axios.get("http://localhost:5001/api/products/all")
+    axios.get("https://website-1-qyg8.onrender.com/api/products/all")
       .then((res) => {
         setProducts(res.data);
         const initialQuantities = {};
@@ -30,7 +30,7 @@ function ViewAll() {
   };
 
   const addToCart = (product) => {
-    axios.post(`http://localhost:5001/api/cart/${userId}`, {
+    axios.post(`https://website-1-qyg8.onrender.com/api/cart/${userId}`, {
       productId: product.productId,
       name: product.name,
       price: product.price,

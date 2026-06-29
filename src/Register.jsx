@@ -15,7 +15,7 @@
 //   return;
 // }
 
-//     axios.post("http://localhost:5001/register",{email,password,confirmPassword})
+//     axios.post("https://website-1-qyg8.onrender.com/register",{email,password,confirmPassword})
 //     .then((result)=>{
 //       console.log(result);
 //       alert("registration Successfull");
@@ -80,7 +80,7 @@ function Register({ onClose, onSwitchToLogin }) {
 const handleRegister = async (e) => {
   e.preventDefault();
   try {
-    const response = await axios.post('http://localhost:5001/api/auth/register', {
+    const response = await axios.post('https://website-1-qyg8.onrender.com/api/auth/register', {
       name: formData.name,
       email: formData.email,
       password: formData.password

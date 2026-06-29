@@ -7,7 +7,7 @@
 //   const [cartItems, setCartItems] = useState([]);
 //   const [error, setError] = useState("");
 //   const userId = "6949269c5f3f77a44004b77f";
-//   const API = `http://localhost:5001/api/cart/${userId}`;
+//   const API = `https://website-1-qyg8.onrender.com/api/cart/${userId}`;
 //   const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 // useEffect(() => {
 //   axios.get(API)
@@ -25,7 +25,7 @@
 // const updateQuantity = (productId, newQuantity) => {
 //   if (newQuantity < 1) return; // 1-ku keezha pogamudiyathu
 
-//   axios.put(`http://localhost:5001/api/cart/${userId}/${productId}`, {
+//   axios.put(`https://website-1-qyg8.onrender.com/api/cart/${userId}/${productId}`, {
 //     quantity: newQuantity
 //   })
 //   .then((res) => {
@@ -45,7 +45,7 @@
 //   }
   
 //   // URL correct-a irukku nu uruthi pannunga
-//   axios.delete(`http://localhost:5001/api/cart/${userId}/${productId}`)
+//   axios.delete(`https://website-1-qyg8.onrender.com/api/cart/${userId}/${productId}`)
 //     .then((res) => {
 //       setCartItems(res.data);
 //       alert("Item removed!");
@@ -122,12 +122,12 @@ function Cart() {
   const navigate = useNavigate();
 
   const userId = "6949269c5f3f77a44004b77f"; // Neenga munnadi kudutha ID
-  const API = `http://localhost:5001/api/cart/${userId}`;
+  const API = `https://website-1-qyg8.onrender.com/api/cart/${userId}`;
   // Inga dhaan useEffect-ai add pannanum
   // Cart.jsx file-il
 console.log("Current Cart Items:", cartItems);
 useEffect(() => {
-  axios.get(`http://localhost:5001/api/cart/${userId}`)
+  axios.get(`https://website-1-qyg8.onrender.com/api/cart/${userId}`)
     .then((res) => {
       console.log("Data from Backend:", res.data); // Console-il enna varuthu nu paarunga
       // res.data direct-aa array-aa irunthaal, ithu work aagum
@@ -143,13 +143,13 @@ useEffect(() => {
 
   const updateQuantity = (productId, newQuantity) => {
     if (newQuantity < 1) return;
-    axios.put(`http://localhost:5001/api/cart/${userId}/${productId}`, { quantity: newQuantity })
+    axios.put(`https://website-1-qyg8.onrender.com/api/cart/${userId}/${productId}`, { quantity: newQuantity })
       .then(res => setCartItems(res.data))
       .catch(err => console.error("Update failed:", err));
   };
 
   const removeItem = (productId) => {
-    axios.delete(`http://localhost:5001/api/cart/${userId}/${productId}`)
+    axios.delete(`https://website-1-qyg8.onrender.com/api/cart/${userId}/${productId}`)
       .then(res => setCartItems(res.data))
       .catch(err => console.error("Remove failed:", err));
   };

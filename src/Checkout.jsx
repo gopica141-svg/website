@@ -15,7 +15,7 @@
 
 //     try {
 //       // Backend-kku data anuppurom
-//       await axios.post('http://localhost:5001/api/orders', {
+//       await axios.post('https://website-1-qyg8.onrender.com/api/orders', {
 //         userId: "6949269c5f3f77a44004b77f",
 //         customer: formData
 //       });
@@ -119,7 +119,7 @@ const handleOrder = async () => {
 
     // try {
     //   // Backend-kku order detail-ai anuppuvom
-    //   const response = await axios.post("http://localhost:5001/api/orders", {
+    //   const response = await axios.post("https://website-1-qyg8.onrender.com/api/orders", {
     //     userId: userId,
     //     paymentMethod: paymentMethod,
     //     total: total
@@ -134,7 +134,7 @@ const handleOrder = async () => {
   };
 
  useEffect(() => {
-  axios.get(`http://localhost:5001/api/cart/${userId}`)
+  axios.get(`https://website-1-qyg8.onrender.com/api/cart/${userId}`)
     .then((res) => {
       console.log("API Response:", res.data); // Console-il enna varuthu nu paarunga
       // res.data direct-a array-va iruntha, adhaye set pannunga

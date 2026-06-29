@@ -9,7 +9,7 @@ export const CartProvider = ({ children }) => {
 
   const fetchCart = async () => {
     try {
-      const res = await axios.get(`http://localhost:5001/api/cart/${userId}`);
+      const res = await axios.get(`https://website-1-qyg8.onrender.com/api/cart/${userId}`);
       setCartItems(res.data);
     } catch (err) {
       console.error("Failed to fetch cart", err);
@@ -21,7 +21,7 @@ export const CartProvider = ({ children }) => {
   }, []);
 
   const addToCart = async (product) => {
-    await axios.post(`http://localhost:5001/api/cart/${userId}`, {
+    await axios.post(`https://website-1-qyg8.onrender.com/api/cart/${userId}`, {
       productId: product._id,
       name: product.name,
       price: product.price,

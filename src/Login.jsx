@@ -13,7 +13,7 @@
 //     e.preventDefault();
 
 //     axios
-//       .post("http://localhost:5001/login", { email, password })
+//       .post("https://website-1-qyg8.onrender.com/login", { email, password })
 //       .then((result) => {
 //         if (result.data === "success") {
 //           navigate("/");
@@ -73,7 +73,7 @@ function Login({ setIsLoggedIn, onClose, onSwitchToRegister }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5001/api/auth/login', formData);
+      const res = await axios.post('https://website-1-qyg8.onrender.com/api/auth/login', formData);
       localStorage.setItem('isAuthenticated', 'true');
       setIsLoggedIn(true);
       onClose();
