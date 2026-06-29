@@ -1,0 +1,23 @@
+.zoom-card {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
+.zoom-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+.zoom-card {
+  transition: all 0.4s ease;
+}
+
+.zoom-card:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+.hero-image-3d-wrapper:hover {
+  transform: rotateX(0deg) rotateY(0deg) scale(1.05) !important;
+}

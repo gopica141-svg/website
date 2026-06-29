@@ -1,0 +1,30 @@
+[
+  {
+    "id": 301,
+    "name": "Classic Sweet Box",
+    "price": 500,
+    "image": "/images/gift1.jpg",
+    "description": "Assorted traditional sweets in a premium box."
+  },
+  {
+    "id": 302,
+    "name": "Dry Fruit Hamper",
+    "price": 850,
+    "image": "/images/gift2.jpg",
+    "description": "A mix of premium almonds, cashews, and pistachios."
+  },
+  {
+    "id": 303,
+    "name": "Celebration Combo",
+    "price": 1200,
+    "image": "/images/gift3.webp",
+    "description": "Combination of sweets and savouries for special occasions."
+  },
+  {
+    "id": 304,
+    "name": "Festival Special Gift",
+    "price": 1500,
+    "image": "/images/gift4.webp",
+    "description": "Grand collection of our best selling items."
+  }
+]

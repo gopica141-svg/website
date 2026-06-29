@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: auto !important;
+}
+
+#root {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Page container-ai static-a vachukonga */
+.page-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Content mattum slide aagum */
+.content-wrapper {
+  animation: slideTopToBottom 0.6s ease-out forwards;
+}
+
+@keyframes slideTopToBottom {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Card Hover effect */
+.product-card {
+  transition: all 0.4s ease-in-out !important;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
+}
+
+/* Image Zoom */
+.image-zoom-wrapper {
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.zoom-image {
+  transition: transform 0.5s ease !important;
+}
+
+.product-card:hover .zoom-image {
+  transform: scale(1.1);
+}
+.btn-heritage {
+  background-color: #8B0000 !important;
+  color: white !important;
+  border-radius: 50px !important;
+  font-weight: 700;
+  padding: 10px !important;
+  border: none !important;
+}
+
+.btn-heritage:hover {
+  background-color: #6d0000 !important;
+}
+
+.modal-content {
+  border-radius: 25px !important;
+  overflow: hidden;
+}
+
+/* Cart Table Styling */
+.cart-table {
+    border: 1px solid #eee;
+}
+
+.cart-table thead {
+    background-color: #fafafa;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* Quantity Button Styling */
+.qty-btn {
+    background-color:#2c3e50 !important;
+    border: none !important;
+    color:white !important;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.qty-btn:hover {
+    background-color: #e2e6ea;
+}
+
+.qty-input {
+    width: 50px !important;
+    height: 35px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+}
+
+/* Order Summary Box */
+.order-summary-block {
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+/* Remove default spinner for number input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+/* Link Hover Effect */
+.continue-link:hover {
+    color: #d35400 !important;
+    text-decoration: underline !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .qty-btn { width: 30px; height: 30px; }
+    .qty-input { width: 40px !important; height: 30px; }
+}
+
+

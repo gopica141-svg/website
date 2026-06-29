@@ -1,0 +1,16 @@
+[
+  {
+    "id": 101,
+    "name": "Royal Dry Fruit Box",
+    "price": 899,
+    "image":"/images/hd Gifting.webp",
+    "description": "Premium quality dry fruits for gifting"
+  },
+  {
+    "id": 102,
+    "name": "Assorted Sweets Box",
+    "price": 599,
+    "image": "/images/hd assorted.jpeg",
+    "description": "A mix of our best selling sweets"
+  }
+]

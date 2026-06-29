@@ -1,0 +1,16 @@
+[
+  {
+    "id": 201,
+    "name": "Sugar-Free Dry Fruit Laddu",
+    "price": 450,
+    "image": "/images/sf.avif",
+    "description": "Healthy, no added sugar, rich in nuts."
+  },
+  {
+    "id": 202,
+    "name": "Millet Cookies",
+    "price": 200,
+    "image": "/images/sb.png",
+    "description": "Crispy and healthy millet-based snacks."
+  }
+]

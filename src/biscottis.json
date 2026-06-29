@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Almond Biscotti",
+    "price": 250,
+    "image": "/images/Almond-Biscotti.webp",
+    "description": "Crunchy almond biscotti"
+  },
+  {
+    "id": 2,
+    "name": "Chocolate Biscotti",
+    "price": 280,
+    "image": "/images/Chocolate Biscotti_3.png",
+    "description": "Rich chocolate biscotti"
+  }
+]

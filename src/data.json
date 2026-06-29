@@ -1,0 +1,63 @@
+
+
+[
+  {
+    "id": 1,
+    "name": "Mysore pak",
+    "price": 260,
+    "image": "/images/mysorepak.jpg",
+    "description":"A rich and authentic south indian sweet made with pure ghee and jaggery"
+     
+  },
+  {
+    "id": 2,
+    "name": "Laddu",
+    "price": 230,
+    "image": "/images/laddu.jpg",
+    "description":"A luxurious sweet made with premium cashews and jaggery"
+  },
+  {
+    "id": 3,
+    "name": "Kaju Katli",
+    "price": 360,
+    "image": "/images/kajukat.jpg",
+    "description":"A luxurious sweet made with premium cashews and jaggery"
+  },
+  {
+    "id": 4,
+    "name": "Jamun",
+    "price": 440,
+    "image": "/images/jamun.jpeg",
+    "description":"A rich and authentic south indian sweet made with pure ghee and jaggery"
+  },
+  
+  {
+    "id": 5,
+    "name": "rose nuggets",
+    "price": 260,
+    "image": "/images/rose.webp",
+    "description":"A rich and authentic south indian sweet made with pure ghee and jaggery"
+     
+  },
+  {
+    "id": 6,
+    "name": "rasagulla",
+    "price": 230,
+    "image": "/images/rasagulla.jpg",
+    "description":"A luxurious sweet made with premium cashews and jaggery"
+  },
+  {
+    "id": 7,
+    "name": "palkova",
+    "price": 360,
+    "image": "/images/palkova.jpg",
+    "description":"A luxurious sweet made with premium cashews and jaggery"
+  },
+  {
+    "id": 8,
+    "name": "badusha",
+    "price": 440,
+    "image": "/images/badusha.webp",
+    "description":"A rich and authentic south indian sweet made with pure ghee and jaggery"
+  }
+]

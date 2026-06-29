@@ -1,0 +1,11 @@
+/* Hero.css */
+.hero-img {
+  width: 100%;
+  height: 600px !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-indicators {
+  margin-bottom: 20px;
+}

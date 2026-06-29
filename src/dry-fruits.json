@@ -1,0 +1,30 @@
+[
+  { 
+    "id": 101, 
+    "name": "Almonds", 
+    "price": 800, 
+    "image": "/images/almond.jpeg", 
+    "description": "Premium quality crunchy almonds." 
+  },
+  { 
+    "id": 102, 
+    "name": "Cashews", 
+    "price": 900, 
+    "image": "/images/cashew.jpg", 
+    "description": "Fresh and creamy cashew nuts." 
+  },
+  { 
+    "id": 103, 
+    "name": "Pista", 
+    "price": 1200, 
+    "image": "/images/pis.webp", 
+    "description": "Roasted and salted pistachios." 
+  },
+  { 
+    "id": 104, 
+    "name": "Walnuts", 
+    "price": 1100, 
+    "image": "/images/wal.avif", 
+    "description": "Healthy premium walnuts." 
+  }
+]

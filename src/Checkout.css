@@ -1,0 +1,92 @@
+/* Container padding */
+.my-5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Sections Styling */
+.checkout-section {
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    color: #222;
+}
+
+/* Product Item Layout */
+.order-item img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.price {
+    font-weight: 700;
+    color: #000;
+}
+
+/* Payment Options */
+.pay-option {
+    cursor: pointer;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ccc !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.pay-option:hover {
+    background: #f8f9fa;
+    border-color: #ff7f00 !important;
+}
+
+/* Summary Box */
+.order-summary-box {
+    background: #fffaf0 !important;
+    border: 1px dashed #ff7f00 !important;
+    border-radius: 6px;
+}
+
+.total-amount {
+    color: #2c3e50;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+    .checkout-section {
+        margin-bottom: 20px;
+    }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.selected-border {
+  border: 2px solid #e67e22 !important;
+  background-color: #fff3e0;
+}

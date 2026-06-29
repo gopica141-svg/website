@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "692981c49967dda18d83167a"
+  },
+  "id": 2,
+  "name": "Laddu",
+  "price": 270,
+  "image": "/images/laddu.jpg",
+  "description": "A luxurious sweet made with premium cashews and jaggery"
+}]
