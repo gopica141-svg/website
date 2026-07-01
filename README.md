@@ -1,16 +1,37 @@
-# React + Vite
+SweetCrate
+Bringing the Tradition of Indian Sweets to the Digital World.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SweetCrate is a sleek, modern e-commerce platform designed to provide a hassle-free experience for sweet-lovers to explore and purchase authentic Indian delicacies online.
 
-Currently, two official plugins are available:
+🚀 Key Highlights (What makes this project unique)
+Intuitive UI/UX: Built with a focus on simplicity, ensuring users can navigate through categories seamlessly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Real-time Cart Logic: Dynamic state management allows users to add/remove items and see instant price updates.
 
-## React Compiler
+Responsive Architecture: Fully optimized for mobile, tablet, and desktop viewing.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Performance Focused: Lightweight design ensuring fast load times, even with high-quality product images.
 
-## Expanding the ESLint configuration
+🛠 Tech Stack
+This project is built using the MERN Stack:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Frontend: React.js for building dynamic, component-based user interfaces.
+
+Backend: Node.js & Express.js for handling API requests and server-side logic.
+
+Database: MongoDB for scalable, flexible JSON-based data storage.
+⚙️ How to Run Locally
+Prerequisites
+Node.js (LTS version)
+
+MongoDB installed or MongoDB Atlas account.
+.
+
+📧 Get in Touch
+Gopica A.
+
+https://www.linkedin.com/in/GopicaA
+
+https://resume-portfolio-uwha.vercel.app/
+
+gopica141@gmail.com
